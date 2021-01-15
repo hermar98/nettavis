@@ -1,0 +1,33 @@
+.marquee-container {
+    padding:3px;
+    border:1px solid #e6e6e6;
+    background-color: whitesmoke;
+    overflow:hidden;
+}
+
+.marquee{
+    display:block;
+    position:relative;
+    width: 2000px;
+    height:40px;
+    animation:scroll 30s linear infinite;
+    padding:3px;
+    overflow: hidden;
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+.marquee-link {
+    color: black;
+    height:150px;
+    margin:3px 20px;
+    float:left;
+}
+
+/* Make it move */
+@keyframes scroll{
+    0% {left:800px;}
+    100% {left:-2000px;}
+}
